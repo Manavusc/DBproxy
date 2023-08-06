@@ -66,7 +66,6 @@ describe('DB Proxy Tests', () => {
   beforeEach(async () => {
     // Before each test, create the tables and columns based on the mock schema
     await createTablesFromSchemas(db, schemas);
-    console.log('hi')
   });
 
   afterEach(async () => {

@@ -45,7 +45,6 @@ app.post('/:collection', async (req: Request, res: Response) => {
       ? { filename: './data/dev-db.sqlite' }
       : { filename: './data/db.sqlite' };
       const db = await openDatabase(dbConfig);
-      console.log(db);
       const columns = Object.keys(data);
       const values = Object.values(data);
       const placeholders = new Array(values.length).fill('?').join(',');

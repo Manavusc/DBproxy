@@ -21,7 +21,6 @@ export async function createTablesFromSchemas(db: Database , schemas:any){
           const primaryKeyField = schema.fields.find((field: any) => field.primary === true);
           const primaryKey = primaryKeyField ? primaryKeyField.name : 'id';
           const query = `CREATE TABLE IF NOT EXISTS ${tableName} (${primaryKey} INTEGER PRIMARY KEY, ${fields})`;
-          console.log('Query:', query);
 
           await db.run(query);
 
@@ -39,7 +38,6 @@ async function addMissingColumns(db: Database, tableName: string, fields: any[])
     const query = `PRAGMA table_info(${tableName})`;
     try {
         const existingColumns = await db.all(query);
-        console.log(existingColumns);
         const existingColumnNames = existingColumns.map((column) => column.name);
 
         for (const field of fields) {
