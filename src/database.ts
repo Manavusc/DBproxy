@@ -25,7 +25,7 @@ export async function createTablesFromSchemas(db: Database , schemas:any){
 
           await db.run(query);
 
-        //   await addMissingColumns(db, tableName, schema.fields);
+          await addMissingColumns(db, tableName, schema.fields);
         }
       } catch (err:any) {
         console.error('Error creating tables:', err);
