@@ -33,7 +33,7 @@ The objective of this project is to build a versatile database proxy that can in
 
 - Automated Tests: The project includes automated tests to ensure the correctness of the implemented business logic. Tests can be executed using: `npm test`. Don't use this having a small bug.
 
-## NOT Complted
+## NOT Completed
 
 - Automated Tests:  I implemented it but it consist of a small bug, but automated test are very important to enusre correctness.
 
@@ -54,5 +54,5 @@ The objective of this project is to build a versatile database proxy that can in
 
 ## Other Comments
 
-The project demonstrates a basic implementation of a DB Proxy for CRUD operations using TypeScript, Node.js, and SQLite. It lays the foundation for a more complete and production-ready application. However, additional features, testing, error handling, and security considerations should be thoroughly addressed for a fully functional and robust database proxy in a real-world scenario. -->
+The project demonstrates a basic implementation of a DB Proxy for CRUD operations using TypeScript, Node.js, and SQLite. It lays the foundation for a more complete and production-ready application. However, additional features, testing, error handling, and security considerations should be thoroughly addressed for a fully functional and robust database proxy in a real-world scenario.
 
