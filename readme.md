@@ -27,7 +27,7 @@ The objective of this project is to build a versatile database proxy that can in
 
 ## Manual testing 
 
-- Tested for both PostMan and Curl 
+- Tested for both PostMan and Curl.View output folder. 
 
 ## Additional Features
 
